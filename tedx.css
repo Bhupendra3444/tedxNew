@@ -1,0 +1,186 @@
+
+body, h1, h2, p, ul, li {
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 21px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+
+.header-scroll {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    padding: 9px 338px;
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    padding: 29px 42px;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 31px;
+    text-decoration: underline;
+    
+
+    transition: color 0.3s;
+}
+
+
+.menu a:hover {
+    color: #000000;
+    border: 2px solid red;
+    border-radius: 40%;
+    background-color: red;
+}
+
+.hero {
+    text-align: center;
+    padding: 200px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-text {
+    font-size: 36px;
+    animation: scaleText 2s ease-in-out infinite alternate;
+}
+
+.back{
+    padding: 117px 20px;
+}
+.back{
+    padding: 117px 80px;
+}
+@keyframes scaleText {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.about {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+    margin-top: 200px; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 200px; 
+}
+/* Add a media query for phones */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+        padding: 9px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .menu li {
+        padding: 9px 6px; /* Adjust padding for smaller screens */
+    }
+
+    .menu a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .hero {
+        padding: 80px 0; /* Adjust padding for smaller screens */
+    }
+
+    .animated-text {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .about {
+        padding: 20px 0; /* Adjust padding for smaller screens */
+        margin-top: 50px;
+    }
+    #heading{
+        margin-top:69px;
+    }
+    .form-group {
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+    .back img {
+        max-width: 100%; /* Set the maximum width to 100% of the container */
+        object-fit: fill; /* Maintain the image's aspect ratio */
+    }
+    form input,
+    form textarea {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    form button {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+
+    footer {
+        padding: 5px 0; /* Adjust padding for smaller screens */
+        margin-top: 50px;
+    }
+}
